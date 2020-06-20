@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include debt_collection *.css
+recursive-include debt_collection *.csv
+recursive-include debt_collection *.html
+recursive-include debt_collection *.ico
+recursive-include debt_collection *.js
+recursive-include debt_collection *.json
+recursive-include debt_collection *.md
+recursive-include debt_collection *.png
+recursive-include debt_collection *.py
+recursive-include debt_collection *.svg
+recursive-include debt_collection *.txt
+recursive-exclude debt_collection *.pyc
