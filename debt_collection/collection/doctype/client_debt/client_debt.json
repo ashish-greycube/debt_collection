@@ -1,0 +1,192 @@
+{
+ "autoname": "naming_series:",
+ "creation": "2020-06-20 12:46:18.809807",
+ "description": "Client Debt Collection Information",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "client",
+  "id_no",
+  "company",
+  "phone_no",
+  "cell_phone_no",
+  "next_call_date",
+  "cb_1",
+  "customer",
+  "service_type",
+  "amount",
+  "paid_amount",
+  "agent",
+  "receive_date",
+  "status",
+  "debt_followup_section",
+  "table_17"
+ ],
+ "fields": [
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Series",
+   "options": "CD-.YYYY.-.MM.-",
+   "reqd": 1
+  },
+  {
+   "fieldname": "client",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Client",
+   "reqd": 1
+  },
+  {
+   "fieldname": "id_no",
+   "fieldtype": "Data",
+   "label": "ID No",
+   "unique": 1
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Data",
+   "label": "Company"
+  },
+  {
+   "fieldname": "phone_no",
+   "fieldtype": "Data",
+   "label": "Phone No"
+  },
+  {
+   "fieldname": "cell_phone_no",
+   "fieldtype": "Data",
+   "label": "Cell Phone No"
+  },
+  {
+   "fieldname": "cb_1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "customer",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Customer",
+   "options": "Customer",
+   "reqd": 1
+  },
+  {
+   "fieldname": "amount",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Amount",
+   "reqd": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "paid_amount",
+   "fieldtype": "Currency",
+   "label": "Paid Amount"
+  },
+  {
+   "fieldname": "agent",
+   "fieldtype": "Link",
+   "in_standard_filter": 1,
+   "label": "Agent",
+   "options": "Sales Person"
+  },
+  {
+   "fieldname": "receive_date",
+   "fieldtype": "Date",
+   "label": "Receive Date"
+  },
+  {
+   "fieldname": "next_call_date",
+   "fieldtype": "Date",
+   "label": "Next Call Date"
+  },
+  {
+   "fieldname": "service_type",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Service Type",
+   "options": "Debt Service Type",
+   "reqd": 1
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Status",
+   "options": "Client Debt Status",
+   "reqd": 1
+  },
+  {
+   "fieldname": "debt_followup_section",
+   "fieldtype": "Section Break",
+   "label": "Debt Followup"
+  },
+  {
+   "fieldname": "table_17",
+   "fieldtype": "Table",
+   "options": "Debt Followup"
+  }
+ ],
+ "modified": "2020-06-20 13:00:07.622401",
+ "modified_by": "Administrator",
+ "module": "Collection",
+ "name": "Client Debt",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Sales User",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Sales Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Sales Master Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

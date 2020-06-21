@@ -1,0 +1,41 @@
+{
+ "creation": "2020-06-20 12:53:27.857017",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "communication_date",
+  "column_break_2",
+  "note"
+ ],
+ "fields": [
+  {
+   "fieldname": "communication_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Communication Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "note",
+   "fieldtype": "Small Text",
+   "in_list_view": 1,
+   "label": "Note"
+  }
+ ],
+ "istable": 1,
+ "modified": "2020-06-20 12:53:27.857017",
+ "modified_by": "Administrator",
+ "module": "Collection",
+ "name": "Debt Followup",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

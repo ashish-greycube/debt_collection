@@ -1,0 +1,34 @@
+{
+ "add_total_row": 1,
+ "creation": "2020-06-20 13:03:34.624381",
+ "disable_prepared_report": 0,
+ "disabled": 0,
+ "docstatus": 0,
+ "doctype": "Report",
+ "idx": 0,
+ "is_standard": "Yes",
+ "modified": "2020-06-20 13:11:00.640067",
+ "modified_by": "Administrator",
+ "module": "Collection",
+ "name": "Debt Collection Detail",
+ "owner": "Administrator",
+ "prepared_report": 0,
+ "query": "select \nclient As \"Client:Data:120\", \ncell_phone_no as \"CellPhone:Data:120\",\ncustomer as \"Customer:Link/Customer:150\",\namount as \"Amount:Currency:100\",\nservice_type as \"Service Type:Link/Debt Service Type:100\",\npaid_amount as \"Paid Amount:Currency:100\",\nagent as \"Agent:Link/Sales Person:120\",\nreceive_date as \"Receive Date:Date:100\",\nnext_call_date as \"Next Call Date:Date:100\",\nstatus as \"Status:Link/Client Debt Status:100\"\nfrom `tabClient Debt`",
+ "ref_doctype": "Client Debt",
+ "report_name": "Debt Collection Detail",
+ "report_type": "Query Report",
+ "roles": [
+  {
+   "role": "System Manager"
+  },
+  {
+   "role": "Sales User"
+  },
+  {
+   "role": "Sales Manager"
+  },
+  {
+   "role": "Sales Master Manager"
+  }
+ ]
+}
